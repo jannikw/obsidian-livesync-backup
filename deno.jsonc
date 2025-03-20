@@ -1,0 +1,32 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "../worker/splitWorker.ts": "../worker/splitWorker.mock.ts",
+    "./lib/src/worker/splitWorker.ts": "./lib/src/worker/splitWorker.mock.ts",
+    // "./lib/src/common/utils.ts": "./utils.patched.ts",
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/fs": "jsr:@std/fs@^1.0.14",
+    "@std/jsonc": "jsr:@std/jsonc@^1.0.1",
+    "diff-match-patch": "npm:diff-match-patch@^1.0.5",
+    "crypto": "node:crypto",
+    "fflate": "npm:fflate@^0.8.2",
+    "minimatch": "npm:minimatch@^10.0.1",
+    "octagonal-wheels/": "npm:/octagonal-wheels@0.1.12/",
+    "pouchdb-adapter-http": "npm:pouchdb-adapter-http@^9.0.0",
+    "pouchdb-core": "npm:pouchdb-core@^9.0.0",
+    "pouchdb-errors": "npm:pouchdb-errors@^9.0.0",
+    "pouchdb-find": "npm:pouchdb-find@^9.0.0",
+    "pouchdb-mapreduce": "npm:pouchdb-mapreduce@^9.0.0",
+    "pouchdb-merge": "npm:pouchdb-merge@^9.0.0",
+    "pouchdb-replication": "npm:pouchdb-replication@^9.0.0",
+    "pouchdb-utils": "npm:pouchdb-utils@^9.0.0",
+    "transform-pouch": "npm:transform-pouch@^2.0.0"
+  },
+  "fmt": {
+    "exclude": ["lib"]
+  },
+  "unstable": ["sloppy-imports"],
+  "vendor": true
+}

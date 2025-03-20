@@ -1,0 +1,335 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1": "1.0.11",
+    "jsr:@std/fs@^1.0.14": "1.0.14",
+    "jsr:@std/internal@^1.0.5": "1.0.5",
+    "jsr:@std/json@1": "1.0.1",
+    "jsr:@std/jsonc@^1.0.1": "1.0.1",
+    "jsr:@std/path@*": "1.0.8",
+    "jsr:@std/path@^1.0.8": "1.0.8",
+    "npm:@types/node@*": "22.12.0",
+    "npm:diff-match-patch@^1.0.5": "1.0.5",
+    "npm:fflate@~0.8.2": "0.8.2",
+    "npm:minimatch@^10.0.1": "10.0.1",
+    "npm:octagonal-wheels@0.1.12": "0.1.12",
+    "npm:pouchdb-adapter-http@9": "9.0.0",
+    "npm:pouchdb-core@9": "9.0.0",
+    "npm:pouchdb-errors@9": "9.0.0",
+    "npm:pouchdb-find@9": "9.0.0",
+    "npm:pouchdb-mapreduce@9": "9.0.0",
+    "npm:pouchdb-merge@9": "9.0.0",
+    "npm:pouchdb-replication@9": "9.0.0",
+    "npm:pouchdb-utils@9": "9.0.0",
+    "npm:transform-pouch@2": "2.0.0"
+  },
+  "jsr": {
+    "@std/assert@1.0.11": {
+      "integrity": "2461ef3c368fe88bc60e186e7744a93112f16fd110022e113a0849e94d1c83c1",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/fs@1.0.14": {
+      "integrity": "1e84bf0b95fe08f41f1f4aea9717bbf29f45408a56ce073b0114474ce1c9fccf",
+      "dependencies": [
+        "jsr:@std/path@^1.0.8"
+      ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    },
+    "@std/json@1.0.1": {
+      "integrity": "1f0f70737e8827f9acca086282e903677bc1bb0c8ffcd1f21bca60039563049f"
+    },
+    "@std/jsonc@1.0.1": {
+      "integrity": "6b36956e2a7cbb08ca5ad7fbec72e661e6217c202f348496ea88747636710dda",
+      "dependencies": [
+        "jsr:@std/json"
+      ]
+    },
+    "@std/path@1.0.8": {
+      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    }
+  },
+  "npm": {
+    "@types/node@22.12.0": {
+      "integrity": "sha512-Fll2FZ1riMjNmlmJOdAyY5pUbkftXslB5DgEzlIuNaiWhXd00FhWxVC/r4yV/4wBb9JfImTu+jiSvXTkJ7F/gA==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "balanced-match@1.0.2": {
+      "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="
+    },
+    "brace-expansion@2.0.1": {
+      "integrity": "sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==",
+      "dependencies": [
+        "balanced-match"
+      ]
+    },
+    "diff-match-patch@1.0.5": {
+      "integrity": "sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw=="
+    },
+    "fetch-cookie@2.2.0": {
+      "integrity": "sha512-h9AgfjURuCgA2+2ISl8GbavpUdR+WGAM2McW/ovn4tVccegp8ZqCKWSBR8uRdM8dDNlx5WdKRWxBYUwteLDCNQ==",
+      "dependencies": [
+        "set-cookie-parser",
+        "tough-cookie"
+      ]
+    },
+    "fflate@0.8.2": {
+      "integrity": "sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A=="
+    },
+    "idb@8.0.2": {
+      "integrity": "sha512-CX70rYhx7GDDQzwwQMDwF6kDRQi5vVs6khHUumDrMecBylKkwvZ8HWvKV08AGb7VbpoGCWUQ4aHzNDgoUiOIUg=="
+    },
+    "minimatch@10.0.1": {
+      "integrity": "sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==",
+      "dependencies": [
+        "brace-expansion"
+      ]
+    },
+    "node-fetch@2.6.9": {
+      "integrity": "sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==",
+      "dependencies": [
+        "whatwg-url"
+      ]
+    },
+    "octagonal-wheels@0.1.12": {
+      "integrity": "sha512-pReKb681tUrrrvQCWmzsUFCeq4x5ClvkWMhUMz+WBjUCE5r0+5+Wzpd2sYWa0tpl7vwLa764MO7/p1THMEcXoA==",
+      "dependencies": [
+        "idb",
+        "xxhash-wasm@0.4.2",
+        "xxhash-wasm-102@npm:xxhash-wasm@1.1.0"
+      ]
+    },
+    "pouchdb-abstract-mapreduce@9.0.0": {
+      "integrity": "sha512-SnTtqwAEiAa3uxKbc1J7LfiBViwEkKe2xkK92zxyTXPqWBvMnh4UU3GXxx7GrXTM4L9llsQ3lSjpbH4CNqG1Mw==",
+      "dependencies": [
+        "pouchdb-binary-utils",
+        "pouchdb-collate",
+        "pouchdb-errors",
+        "pouchdb-fetch",
+        "pouchdb-mapreduce-utils",
+        "pouchdb-md5",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-adapter-http@9.0.0": {
+      "integrity": "sha512-2eL008XeRZkdyp3hMHHOhdIPqK9H6Mn4SLlQvit4zCbqnOFfAswzPjUmHULGMbDUCrQBTu6y82FnV6NHXv9kgw==",
+      "dependencies": [
+        "pouchdb-binary-utils",
+        "pouchdb-errors",
+        "pouchdb-fetch",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-binary-utils@9.0.0": {
+      "integrity": "sha512-2OMtgDZi82vqs+zNDE0YiYjOaWkYCUcZJZKK3WkRr+XYRu+2B7umJrnygJFhUwoGedBbHSrlQBLhdNV3F1AX1A=="
+    },
+    "pouchdb-changes-filter@9.0.0": {
+      "integrity": "sha512-ig0fo0WLgIjAniFJ19Uw1Y+oxiypqC+Skhd8BCETRVXOhLBzueRwEQR4thffyo0UayYVqldJfSR5wHSDvEVk/A==",
+      "dependencies": [
+        "pouchdb-errors",
+        "pouchdb-selector-core",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-checkpointer@9.0.0": {
+      "integrity": "sha512-yu1OlWw78oTHKOkg1GoxxF2qB7YUsjK3rUDJOChMs/sVlZwOTZ4mGdWFPBr3udxSGvR77E+g89kpdmAWhPpHvA==",
+      "dependencies": [
+        "pouchdb-collate",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-collate@9.0.0": {
+      "integrity": "sha512-TrnEDNZEmIIl+W3xKUO8h+geqVLQ90oZe5ujPkl8myUzpREULWXWQBnV5EzPXVEKDBpJlb8T3I6oy/zdWGQpdA=="
+    },
+    "pouchdb-core@9.0.0": {
+      "integrity": "sha512-98SJgs8bqXhr4gMGuOTR8yVeLlMYy797zlOtdlvlXIxIicvocyA8ColhVVhdBXPNOGxT2HwReIMywdIVAgibpg==",
+      "dependencies": [
+        "pouchdb-changes-filter",
+        "pouchdb-errors",
+        "pouchdb-fetch",
+        "pouchdb-merge",
+        "pouchdb-utils",
+        "uuid"
+      ]
+    },
+    "pouchdb-errors@9.0.0": {
+      "integrity": "sha512-961PSMLhW0UqqdJ566g+CdLZ5pkBJRd6l4WWpCDdD0USvE4xYfYGzv43w7nZZBw1k3Xdy092yqPge7yX/tfnyw=="
+    },
+    "pouchdb-fetch@9.0.0": {
+      "integrity": "sha512-TbE3cUcAJQrwb9kr44tDP0X+NAbcqgjsTvcL30L4xzBNJeCPTIRjukYX80s154SHJUXBxcWRiPsMmNqpXsjfCA==",
+      "dependencies": [
+        "fetch-cookie",
+        "node-fetch"
+      ]
+    },
+    "pouchdb-find@9.0.0": {
+      "integrity": "sha512-vvVhq4eEOmSkwSRwf2NBYtdhURB7ryJ7sUI4WDN00GuLUj2g8jAXBJuZIryVgdYt/5S5cfn70iRL6Eow+LFhpA==",
+      "dependencies": [
+        "pouchdb-abstract-mapreduce",
+        "pouchdb-collate",
+        "pouchdb-errors",
+        "pouchdb-fetch",
+        "pouchdb-md5",
+        "pouchdb-selector-core",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-generate-replication-id@9.0.0": {
+      "integrity": "sha512-wetxjU0W/qNYtfHIoKwBO73ddUr0/eqzYOkoKHSFXCgOzYmTglDeqXiVY9LPysRXTgaHUJPKC5LoknZZw7e+Dw==",
+      "dependencies": [
+        "pouchdb-collate",
+        "pouchdb-md5"
+      ]
+    },
+    "pouchdb-mapreduce-utils@9.0.0": {
+      "integrity": "sha512-Bjh8W6QXqp1j7MKmHhYYp5cYlcQsm5drD8Jd/F+ZlfNt18uiD2SQXWzGM5797+tiW/LszFGb8ttw0uHWjxufCQ==",
+      "dependencies": [
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-mapreduce@9.0.0": {
+      "integrity": "sha512-ZD8PleQ9atzQAzT2LZWsvooUVEfsen5QGv/SDfci20IleCaFW2A2q7OERrqY0YWKDCCNRsWhPWPmsFvZC9K8DQ==",
+      "dependencies": [
+        "pouchdb-abstract-mapreduce",
+        "pouchdb-mapreduce-utils",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-md5@9.0.0": {
+      "integrity": "sha512-58xUYBvW3/s+aH0j4uOhhN8yCk0LQ254cxBzI/gbKA9PrfwHpe4zrr0L/ia5ml3A30oH1f8aTnuVMwWDkFcuww==",
+      "dependencies": [
+        "pouchdb-binary-utils",
+        "spark-md5"
+      ]
+    },
+    "pouchdb-merge@9.0.0": {
+      "integrity": "sha512-Xh+TgOZCkGoZpI589btKf/cTiuQ5CsnPl9YpdW4h0cAPusniN6XNsR62F+/HbL9wirI6XTEPHUrk7MsQbk3S3A==",
+      "dependencies": [
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-replication@9.0.0": {
+      "integrity": "sha512-EZ68KJ3ZUWuPe35NxP6WnRw8J6Zudf0j/tZ/6mOSrCcp3EbtBNt8Ke2FaAThUgiFahVnHD5Y8nd53EGs2DLygg==",
+      "dependencies": [
+        "pouchdb-checkpointer",
+        "pouchdb-errors",
+        "pouchdb-generate-replication-id",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-selector-core@9.0.0": {
+      "integrity": "sha512-ZYHYsdoedwm8j5tYofz+3+uUSK8i+7tRCBb01T0OuqDQb17+w5mzjHF8Ppi160xdPUPaWCo1Un+nLWGJzkmA3g==",
+      "dependencies": [
+        "pouchdb-collate",
+        "pouchdb-utils"
+      ]
+    },
+    "pouchdb-utils@9.0.0": {
+      "integrity": "sha512-xWZE5c+nAslgmLC8JBZbky8AYgdz7pKtv7KTSi6CD2tuQD0WyNKib0YnhZndeE84dksTeZlqlg56RQHsHoB2LQ==",
+      "dependencies": [
+        "pouchdb-errors",
+        "pouchdb-md5",
+        "uuid"
+      ]
+    },
+    "pouchdb-wrappers@5.0.0": {
+      "integrity": "sha512-fXqsVn+rmlPtxaAIGaQP5TkiaT39OMwvMk+ScLLtHrmfXD2KBO6fe/qBl38N/rpTn0h/A058dPN4fLAHt550zA=="
+    },
+    "psl@1.15.0": {
+      "integrity": "sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==",
+      "dependencies": [
+        "punycode"
+      ]
+    },
+    "punycode@2.3.1": {
+      "integrity": "sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg=="
+    },
+    "querystringify@2.2.0": {
+      "integrity": "sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ=="
+    },
+    "requires-port@1.0.0": {
+      "integrity": "sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ=="
+    },
+    "set-cookie-parser@2.7.1": {
+      "integrity": "sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ=="
+    },
+    "spark-md5@3.0.2": {
+      "integrity": "sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw=="
+    },
+    "tough-cookie@4.1.4": {
+      "integrity": "sha512-Loo5UUvLD9ScZ6jh8beX1T6sO1w2/MpCRpEP7V280GKMVUQ0Jzar2U3UJPsrdbziLEMMhu3Ujnq//rhiFuIeag==",
+      "dependencies": [
+        "psl",
+        "punycode",
+        "universalify",
+        "url-parse"
+      ]
+    },
+    "tr46@0.0.3": {
+      "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="
+    },
+    "transform-pouch@2.0.0": {
+      "integrity": "sha512-nDZovo0U5o0UdMNL93fMQgGjrwH9h4F/a7qqRTnF6cVA+FfgyXiJPTrSuD+LmWSO7r2deZt0P0oeCD8hkgxl5g==",
+      "dependencies": [
+        "pouchdb-wrappers"
+      ]
+    },
+    "undici-types@6.20.0": {
+      "integrity": "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="
+    },
+    "universalify@0.2.0": {
+      "integrity": "sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg=="
+    },
+    "url-parse@1.5.10": {
+      "integrity": "sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==",
+      "dependencies": [
+        "querystringify",
+        "requires-port"
+      ]
+    },
+    "uuid@8.3.2": {
+      "integrity": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
+    },
+    "webidl-conversions@3.0.1": {
+      "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ=="
+    },
+    "whatwg-url@5.0.0": {
+      "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
+      "dependencies": [
+        "tr46",
+        "webidl-conversions"
+      ]
+    },
+    "xxhash-wasm@0.4.2": {
+      "integrity": "sha512-/eyHVRJQCirEkSZ1agRSCwriMhwlyUcFkXD5TPVSLP+IPzjsqMVzZwdoczLp1SoQU0R3dxz1RpIK+4YNQbCVOA=="
+    },
+    "xxhash-wasm@1.1.0": {
+      "integrity": "sha512-147y/6YNh+tlp6nd/2pWq38i9h6mz/EuQ6njIrmW8D1BS5nCqs0P6DG+m6zTGnNz5I+uhZ0SHxBs9BsPrwcKDA=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1",
+      "jsr:@std/fs@^1.0.14",
+      "jsr:@std/jsonc@^1.0.1",
+      "npm:diff-match-patch@^1.0.5",
+      "npm:fflate@~0.8.2",
+      "npm:minimatch@^10.0.1",
+      "npm:octagonal-wheels@0.1.12",
+      "npm:pouchdb-adapter-http@9",
+      "npm:pouchdb-core@9",
+      "npm:pouchdb-errors@9",
+      "npm:pouchdb-find@9",
+      "npm:pouchdb-mapreduce@9",
+      "npm:pouchdb-merge@9",
+      "npm:pouchdb-replication@9",
+      "npm:pouchdb-utils@9",
+      "npm:transform-pouch@2"
+    ]
+  }
+}
