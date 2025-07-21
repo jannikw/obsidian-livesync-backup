@@ -6,3 +6,4 @@ The application uses the Obsidian LiveSync commonlib to communicate with CouchDB
 
 ## Developement
 
+nix build '.?submodules=1#default' --print-build-logs
