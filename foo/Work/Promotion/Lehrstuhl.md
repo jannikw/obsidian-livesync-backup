@@ -1,0 +1,3 @@
+- Schlüsselkarte (Alex fragen)
+- Telefon einstellen (Alex fragen)
+- Seite auf https://dbis.cs.tu-dortmund.de/team/

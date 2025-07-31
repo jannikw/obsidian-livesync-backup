@@ -110,6 +110,7 @@ async function main() {
   }
   const backupDir = Deno.args[0];
   const conf = loadConfigFromEnv();
+  console.error(`Connecting to ${conf.url} with databse ${conf.database}...`);
   const livesync = new DirectFileManipulator(conf);
 
   await backup(livesync, backupDir);

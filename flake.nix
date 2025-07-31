@@ -75,6 +75,10 @@
     {
       packages.${system}.default = appWrappedWithEnv;
 
+      nixosModules.default = import ./nixos-module.nix {
+        obsidian-livesync-backup = self.packages.${system}.default;
+      };
+
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [ pkgs.deno ];
       };

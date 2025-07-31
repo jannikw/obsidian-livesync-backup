@@ -1,0 +1,1 @@
+- https://hpi.de/rabl/teaching/winter-term-2021-2022/lecture-series-on-database-research/stream-processing.html

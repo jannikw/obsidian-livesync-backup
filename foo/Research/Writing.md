@@ -1,0 +1,2 @@
+- Three Sins of Authors in Computer Science and Math: https://www.cs.cmu.edu/~jrs/sins.html
+- https://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century
