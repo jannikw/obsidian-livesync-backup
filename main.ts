@@ -105,7 +105,7 @@ async function backup(livesync: DirectFileManipulator, backupDir: string) {
 
 async function main() {
   if (Deno.args.length !== 1) {
-    console.error("Usage: obsidian-livesync-backup <backup-dir>");
+    console.error(`Usage: ${path.basename(Deno.execPath())} <backup-dir>`);
     Deno.exit(1);
   }
   const backupDir = Deno.args[0];
