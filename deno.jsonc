@@ -5,7 +5,6 @@
   "imports": {
     "../worker/splitWorker.ts": "../worker/splitWorker.mock.ts",
     "./lib/src/worker/splitWorker.ts": "./lib/src/worker/splitWorker.mock.ts",
-    // "./lib/src/common/utils.ts": "./utils.patched.ts",
     "@std/assert": "jsr:@std/assert@1",
     "@std/fs": "jsr:@std/fs@^1.0.14",
     "@std/jsonc": "jsr:@std/jsonc@^1.0.1",

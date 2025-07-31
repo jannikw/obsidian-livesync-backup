@@ -1,8 +1,8 @@
 {
-  description = "A very basic flake";
+  description = "Obsidian Livesync Backup";
 
   inputs = {
-    # self.submodules = true;
+    self.submodules = true;
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
