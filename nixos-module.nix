@@ -132,7 +132,6 @@ in
         };
       }
     ))
-    lib.traceValSeq
     builtins.listToAttrs
   ];
 }
