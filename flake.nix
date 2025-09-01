@@ -33,7 +33,7 @@
         outputHash = "sha256-y6k7k08gNODswqLi9JEsHpvMX5sbiVeaRyUlmV1WaWo=";
       };
       deno-runtime = pkgs.fetchurl {
-        url = "https://dl.deno.land/release/${deno.version}/denort-x86_64-unknown-linux-gnu.zip";
+        url = "https://dl.deno.land/release/v${deno.version}/denort-x86_64-unknown-linux-gnu.zip";
         sha256 = "sha256-RRCmEgOSoMuRZRlD+rEELz56wv3q62pzs9AhSWYzFzM=";
       };
       app = pkgs.stdenv.mkDerivation {
