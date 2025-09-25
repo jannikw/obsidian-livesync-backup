@@ -19,18 +19,22 @@
         buildInputs = [ deno ];
         XDG_CACHE_HOME="/tmp/deno"; 
         buildPhase =''
-          deno cache main.ts
+          deno cache --frozen=true main.ts
 
           mkdir $out
           mv node_modules/ vendor/ $out
 
           mkdir $out/cache
           mv $XDG_CACHE_HOME/deno/npm $out/cache
+
+          # Remove registry files as they are not fixed and change the output hash
+          rm $out/cache/npm/registry.npmjs.org/*/registry.json
+          rm $out/cache/npm/registry.npmjs.org/@types/*/registry.json
         '';
 
         outputHashAlgo = "sha256";
         outputHashMode = "recursive";
-        outputHash = "sha256-y6k7k08gNODswqLi9JEsHpvMX5sbiVeaRyUlmV1WaWo=";
+        outputHash = "sha256-W8TOoAl4F9T2PuZoLoQMCjS0L6iV3aoHQV9n3HbYYec=";
       };
       deno-runtime = pkgs.fetchurl {
         url = "https://dl.deno.land/release/v${deno.version}/denort-x86_64-unknown-linux-gnu.zip";
